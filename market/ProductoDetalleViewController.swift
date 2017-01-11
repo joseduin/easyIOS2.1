@@ -25,6 +25,7 @@ class ProductoDetalleViewController: UIViewController, UICollectionViewDelegate,
     @IBOutlet weak var valorStepper: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     
+    @IBOutlet weak var dscrpcn: UILabel!
     let facade: Facade = Facade()
     
     var feature_lista: [ProductFeatures] = [ProductFeatures]()
@@ -53,7 +54,18 @@ class ProductoDetalleViewController: UIViewController, UICollectionViewDelegate,
         condicion.text = productoPass.condition
         nombre.text = productoPass.name
         referencia.text = productoPass.reference
-        descripcion.loadHTMLString(productoPass.description_short, baseURL: nil)
+        
+        let attrStr = try! NSAttributedString(
+            data: productoPass.description_short.data(using: String.Encoding.unicode, allowLossyConversion: true)!,
+            options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+            documentAttributes: nil)
+        dscrpcn.attributedText = attrStr
+       
+        //descripcion.loadHTMLString(productoPass.description_short, baseURL: nil)
+        //dscrpcn.text = productoPass.description_short
+        
+        
+        
         buscarImagen(id: "\(productoPass.id)/\(productoPass.imagenes[0])", tipo: "products", imagenSize: "large_default", imagen: ImagenMuestra)
         
         //if (producto.getDescuentos() == null) {
