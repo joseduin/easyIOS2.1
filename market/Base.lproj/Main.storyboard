@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ap6-jq-pV9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ap6-jq-pV9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1183,7 +1183,7 @@ RGlyZWNjaRvDs24
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1G-af-Nxn">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="559"/>
+                                        <rect key="frame" x="0.0" y="-90" width="375" height="585"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N1G-I4-6RF">
                                                 <rect key="frame" x="0.0" y="8" width="375" height="61"/>
@@ -3711,15 +3711,15 @@ RGlyZWNjaRvDs24
         <image name="ic_receipt" width="24" height="24"/>
         <image name="ic_search" width="24" height="24"/>
         <image name="ic_telefono" width="24" height="24"/>
-        <image name="logo.png" width="192" height="192"/>
+        <image name="logo.png" width="601" height="452"/>
         <image name="sad_search-2.png" width="1440" height="2005"/>
         <image name="transferencia.png" width="260" height="298"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="g6k-2N-FcQ"/>
+        <segue reference="6SU-Ya-mFQ"/>
         <segue reference="7OC-0U-G6A"/>
-        <segue reference="efF-L3-B8P"/>
         <segue reference="5Rh-j2-2l6"/>
-        <segue reference="eiB-MW-S22"/>
         <segue reference="7OZ-fP-4gb"/>
         <segue reference="fLL-eV-Jg1"/>
     </inferredMetricsTieBreakers>
